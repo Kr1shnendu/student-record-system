@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Students</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>All Students</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Course</th>
+        <th>Action</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.marks }}</td>
+        <td>{{ s.course }}</td>
+        <td style="display: flex;">
+            <form action="/update" method="POST">
+                <!-- The hidden input to pass student id -->
+                <input type="hidden" name="student_id" value="{{ s.id }}">
+                <button type="submit">Edit</button>
+            </form>
+            <form action="/api/students/delete/{{ s.id }}" method="POST">
+                <!-- The hidden input to pass student id -->
+                <input type="hidden" name="student_id" value="{{ s.id }}">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+<a href="/create">Add New Student</a>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Update Student</h2>
+
+<form action="/api/students/update/{{student_id}}" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Marks:</label><br>
+    <input type="number" name="marks" required><br><br>
+
+    <label>Course:</label><br>
+    <input type="text" name="course" required><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+<br>
+<a href="/students/all">View All Students</a>
+
+</body>
+</html>

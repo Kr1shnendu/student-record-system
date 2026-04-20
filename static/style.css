@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 70%;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    color: blue;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
