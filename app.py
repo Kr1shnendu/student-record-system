@@ -38,7 +38,7 @@ def create_student():
 
     collection.insert_one(student)
 
-    return render_template("success.html", message="Added Successfully...")
+    return redirect(url_for("get_students"))
 
 
 @app.route("/students/all")

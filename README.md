@@ -3,28 +3,28 @@
 A full-stack **Student Record Management System** built using **Flask** and **MongoDB**.
 This project provides both:
 
-* 🌐 **Web UI (Templates using Flask Jinja2)**
-* 🔗 **REST API (JSON-based CRUD operations)**
+- 🌐 **Web UI (Templates using Flask Jinja2)**
+- 🔗 **REST API (JSON-based CRUD operations)**
 
 ---
 
-##  Features
+## Features
 
 ### 🌐 Web Interface
 
-* Add new student records
-* View all students
-* Update student details
-* Delete student records
-* Simple UI using HTML templates
+- Add new student records
+- View all students
+- Update student details
+- Delete student records
+- Simple UI using HTML templates
 
 ### 🔗 REST API
 
-* Create student (POST)
-* Get all students (GET)
-* Update student (PUT)
-* Delete student (DELETE)
-* JSON-based request & response
+- Create student (POST)
+- Get all students (GET)
+- Update student (PUT)
+- Delete student (DELETE)
+- JSON-based request & response
 
 ---
 
@@ -40,8 +40,7 @@ STUDENT-RECORD-SYSTEM/
 │   ├── index.html
 │   ├── create.html
 │   ├── students.html
-│   ├── update.html
-│   └── success.html
+│   └── update.html
 │
 ├── app.py          # Web UI (Flask + Templates)
 ├── server.py       # REST API (JSON-based)
@@ -52,10 +51,10 @@ STUDENT-RECORD-SYSTEM/
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Flask
-* **Database:** MongoDB Atlas
-* **Frontend:** HTML, CSS (Jinja2 Templates)
-* **Driver:** PyMongo
+- **Backend:** Flask
+- **Database:** MongoDB Atlas
+- **Frontend:** HTML, CSS (Jinja2 Templates)
+- **Driver:** PyMongo
 
 ---
 
@@ -176,20 +175,20 @@ DELETE /students/delete
 
 ## 📌 Notes
 
-* `app.py` → Handles UI and form-based operations
-* `server.py` → Handles API (JSON-based requests)
-* Both connect to the same MongoDB collection
-* Uses `ObjectId` for MongoDB document identification
+- `app.py` → Handles UI and form-based operations
+- `server.py` → Handles API (JSON-based requests)
+- Both connect to the same MongoDB collection
+- Uses `ObjectId` for MongoDB document identification
 
 ---
 
 ## 💡 Future Improvements
 
-* Add authentication (JWT / login system)
-* Input validation & error handling
-* Pagination for student list
-* Search & filter functionality
-* Docker deployment
+- Add authentication (JWT / login system)
+- Input validation & error handling
+- Pagination for student list
+- Search & filter functionality
+- Docker deployment
 
 ---
 
